@@ -1,0 +1,21 @@
+type: ItemBridge
+name: Karhonite Bridge
+description: Acts as a bridge for crossing conveyors or terrain.
+
+hasPower: false
+
+health: 20
+range: 6
+transportTime: 6
+
+requirements: [
+  karhonite/4
+  pudinium/2
+] 
+
+research: {
+    parent: "0-karhonite-conveyor"
+    requirements: [
+        karhonite/30
+    ]
+}

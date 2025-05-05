@@ -1,0 +1,70 @@
+type: ContinuousLiquidTurret
+name: Flame
+description: Shoot a continuous flame that puts on fire the targets
+
+category: turret
+
+outlineColor: 212121
+
+recoil: 1
+
+requirements: [
+    pudinium/25
+    carboliph/28
+]
+
+health: 740
+
+size: 2
+
+ammoTypes: {
+    caramelLiq: {
+        type: ContinuousFlameBulletType
+        damage: 12
+        length: 200
+        rangeChange: 10
+        knockback: 0.2
+        pierceCap: 20
+
+        status: melting
+
+        colors: [
+            000000,
+            3a0000,
+            ff0000,
+            ff2020,
+            ffffff
+        ]
+
+        lightColor: ff0000
+        flareColor: ff0000
+
+        ammoMultiplier: 3
+
+        layer: 79
+    }
+}
+shootY: 4
+loopSound: torch
+
+research: {
+  parent: mono
+  requirements: [
+    pudinium/50
+    carboliph/60
+    karhonite/30
+  ]
+}
+
+drawer: [
+    {
+        type: DrawGlowRegion
+        under: false
+        suffix: -bglow
+        progress: shoot
+        color: ff9d9d
+    },
+    {
+        type: DrawTurret
+    }
+]

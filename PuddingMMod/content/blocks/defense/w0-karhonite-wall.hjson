@@ -1,0 +1,16 @@
+type: Wall
+name: "Karhonite Wall"
+category: defense
+size: 1
+health: 400
+
+requirements: [
+    "karhonite/6"
+]
+
+research: {
+    parent: "core-emerald"
+    requirements: [
+        "karhonite/60"
+    ]
+}

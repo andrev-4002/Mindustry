@@ -1,0 +1,26 @@
+type: CoreBlock
+category: effect
+health: 1100
+size: 3
+
+name: "Core-Cristaloyd"
+
+alwaysUnlocked: true
+
+itemCapacity: 4000
+unitCapModifier: 16
+unitType: brickton
+incinerateNonBuildable: true
+isFirstTier: true
+squareSprite: false
+
+requirements: [
+    pudinium/500
+    karhonite/500
+]
+
+research: {
+    root: true
+    name: @Pudinish-techtree
+	planet: Pudinish
+}

@@ -1,0 +1,20 @@
+type: Router
+name: Karhonite Router
+description: Routers
+
+health: 20
+hasItens: true
+itemCapacity: 2
+
+group: transportation
+
+requirements: [
+    "karhonite/1"
+]
+
+research: {
+    parent: "0-karhonite-conveyor"
+    requirements: [
+        karhonite/40
+    ]
+}

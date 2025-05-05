@@ -1,0 +1,53 @@
+type: ItemTurret
+name: carls
+description: a turret to damage air units
+
+category: turret
+
+outlineColor: 212121
+
+targetGround: false
+targetAir: true
+
+requirements: [
+    pudinium/25
+    karhonite/38
+]
+
+health: 200
+
+size: 2
+
+category: turret
+
+inaccuracy: 15
+shootCone: 25
+rotatespeed: 8
+range: 270
+reload: 40
+recoil: 2
+shoot: {
+  shots: 5
+  shotDelay: 4
+}
+
+ammoTypes: {
+    karhonite: {
+        type: flakBulletType
+        damage: 3
+        splahDamage: 15
+        splashDamageRadius: 25
+        speed: 5
+        lifetime: 70
+        ammoMultiplier: 2
+
+    }
+}
+
+research: {
+  parent: cristaloyd
+  requirements: [
+    pudinium/50
+    karhonite/ 70
+  ]
+}

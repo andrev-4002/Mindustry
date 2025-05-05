@@ -1,0 +1,36 @@
+type: ItemTurret
+name: mono
+description: Not that one. This is a turret, not a mining unit.
+
+category: turret
+
+outlineColor: 212121
+
+reload: 20
+recoil: 2
+
+requirements: [pudinium/20]
+
+health: 200
+
+range: 200
+
+size: 1
+
+ammoTypes: {
+    pudinium: {
+        type: basicBulletType
+        damage: 9
+        speed: 5
+        lifetime: 40
+        ammoMultiplier: 2
+
+    }
+}
+
+research: {
+  parent: cristaloyd
+  requirements: [
+    pudinium/50
+  ]
+}

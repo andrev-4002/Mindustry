@@ -1,0 +1,22 @@
+type: Router
+name: BIG Karhonite Router
+description: R O U T E R S
+
+size: 2
+
+health: 80
+hasItens: true
+itemCapacity: 4
+
+group: transportation
+
+requirements: [
+    "karhonite/8"
+]
+
+research: {
+    parent: "1-karhonite-router"
+    requirements: [
+        karhonite/70
+    ]
+}

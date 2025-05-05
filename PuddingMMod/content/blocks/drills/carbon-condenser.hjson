@@ -1,0 +1,44 @@
+type: AttributeCrafter
+attribute: heat
+description: Extracts carbon from vents
+name: Carbon Condenser
+size: 3
+health: 1200
+squareSprite: false
+
+hasLiquids: true
+outputLiquid: carbon/0.01
+
+category: production
+
+displayEfficiencyScale: 1
+baseEfficiency: 0
+minEfficiency: 1
+
+requirements: [
+    karhonite/40
+    pudinium/25
+]
+
+research: {
+    parent: "cristaloyd"
+    requirements: [
+        karhonite/60
+        pudinium/40
+    ]
+}
+
+drawer: [
+    {
+        type: DrawRegion
+        suffix: "-bottom"
+    }
+    {
+        type: DrawLiquidRegion
+        suffix: "-liquid"
+        drawLiquid: caramelLiq
+    }
+    {
+        type: DrawDefault
+    }
+]

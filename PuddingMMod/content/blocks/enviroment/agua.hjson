@@ -1,0 +1,18 @@
+type: Floor
+name: Agua
+status: melting
+statusDuration: 00
+speedMiltiplier: 0.6
+variants: 0
+liquidDrop: caramelLiq
+isLiquid: true
+cacheLayer: water
+attributes: {
+    heat: 0.5
+}
+emitLight: true
+lightRadius: 30
+lightColor: eda79361
+albedo: 0.9
+supportsOverlay: true
+damageTaken: 3

@@ -1,0 +1,75 @@
+type: ItemTurret
+name: auto
+description: a test turret
+
+category: turret
+
+outlineColor: 212121
+
+reload: 40
+recoil: 2
+
+requirements: [
+    pudinium/15
+    karhonite/38
+]
+
+health: 200
+
+range: 200
+
+size: 1
+
+category: turret
+
+warmupSpeed: 0.2
+warmupMaintainTime: 45
+shootWarmupSpeed: 0.05
+minWarmup: 0.7
+
+heatColor: cf9121
+
+ammoTypes: {
+    pudinium: {
+        type: basicBulletType
+        damage: 24
+        speed: 5
+        lifetime: 46
+        ammoMultiplier: 3
+        trailLength: 5
+        trailColor: f5b146
+
+    }
+}
+
+drawer: [
+    {
+        type: DrawGlowRegion
+        under: false
+        suffix: -heat
+        progress: shoot
+        color: ff9d9d
+    },
+    {
+        type: DrawTurret
+        parts: [
+            {
+                type: RegionPart
+                suffix: -blade
+                progress: warmup
+                mirror: true
+                moveX: -3
+                moveY: 1.3
+                moveRot: 27
+            }
+        ]
+    }
+]
+
+research: {
+  parent: cristaloyd
+  requirements: [
+    pudinium/50
+    karhonite/70
+  ]
+}

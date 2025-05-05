@@ -1,0 +1,24 @@
+type: Drill
+category: production
+
+name: extrator
+
+size: 2
+
+health: 200
+
+drillTime: 610
+tier: 1
+
+hasLiquids: false
+
+requirements: [
+    "karhonite/20"
+]
+
+research: {
+    parent: "cristaloyd"
+    requirements: [
+        karhonite/60
+    ]
+}

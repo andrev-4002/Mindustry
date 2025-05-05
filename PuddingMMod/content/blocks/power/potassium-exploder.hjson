@@ -1,0 +1,68 @@
+type: ConsumeGenerator
+category: power
+size: 2
+health: 240
+name: "Potassium Exploder"
+
+description: explodes water with potassium and generates energy in the process
+
+hasPower: true
+hasLiquids: true
+
+powerProduction: 1.2
+
+itemDuration: 50
+
+consumes: {
+    items: [
+		potassium/4
+	]
+    liquids: [
+        water/1
+    ]
+}
+
+generateEffect: {
+	x: 0
+	y: 0
+	particles: 1
+    length: 0
+    lifetime: 20
+	type: ParticleEffect
+	sizeFrom: 0
+    sizeTo: 5
+	colorFrom: 555555ff
+    colorTo: 55555500
+}
+
+effectChance: 0.1
+
+requirements: [
+    pudinium/20
+    karhonite/18
+]
+
+research: {
+    parent: cristaloyd
+    requirements: [
+        karhonite/50
+    ]
+}
+
+drawer: [
+    {
+        type: DrawRegion
+        suffix: "-bottom"
+    }
+    {
+        type: DrawLiquidRegion
+        suffix: "-liquid"
+        drawLiquid: water
+    }
+    {
+        type: DrawArcSmelt
+    }
+    {
+        type: DrawDefault
+    }
+]

@@ -1,0 +1,33 @@
+type: UnitFactory
+name: "Airship builder"
+description: "the base for building  flying units"
+category: units
+
+health: 400
+
+size: 3
+
+consumes: {
+    power: 3
+}
+
+plans: [
+    {
+        unit: "10-et"
+        requirements: [
+            "pudinium/25"
+            "carboliph/30"
+        ]
+        time: 1200
+    }
+]
+
+requirements: [
+    "pudinium/25"
+    "karhonite/15"
+    "carboliph/20"
+]
+
+research: {
+    parent: "cristaloyd"
+}

@@ -1,0 +1,31 @@
+type: GenericCrafter
+name: "Carbolic Press"
+category: crafting
+
+description: extract carbon from the deepths of the planet and imbue it on a hard black ingot
+
+size:2
+
+health: 240
+
+consumes: {
+    items: [
+        "potassium/1"
+		"karhonite/2"
+	]
+}
+craftTime: 100
+outputItem: "carboliph/1"
+
+requirements: [
+    "pudinium/15"
+    "karhonite/20"
+]
+
+research: {
+    parent: cristaloyd
+    requirements: [
+        pudinium/180
+        karhonite/240
+    ]
+}

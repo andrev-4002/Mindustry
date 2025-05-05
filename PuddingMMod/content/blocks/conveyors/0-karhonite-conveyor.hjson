@@ -1,0 +1,22 @@
+type: Conveyor
+name: Karhonite Conveyor
+description: Moves resources
+
+health: 30
+hasItens: true
+itemCapacity: 3
+
+speed: 0.032
+
+group: transportation
+
+requirements: [
+    "karhonite/1"
+]
+
+research: {
+    parent: "cristaloyd"
+    requirements: [
+        karhonite/30
+    ]
+}

@@ -1,0 +1,27 @@
+type: SteamVent
+parent: carbonic-soil
+blendGroup: carbonic-soil
+
+variants: 0
+
+attributes: {
+    heat: 0.12
+    steam: 0.2
+}
+
+effect: {
+    particles: 3
+    length: 125
+    lifetime: 300
+    cone: 20
+    baseRotation: 50
+    sizeFrom: 0
+    sizeTo: 12
+    colorFrom: 0e0e0e
+    colorTo: 1c1c1c10
+    sizeInterp: pow3Out
+    interp: pow3Out
+
+    layer: 79
+}
+effectSpacing: 15

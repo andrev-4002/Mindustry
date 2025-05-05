@@ -1,0 +1,22 @@
+type: Junction
+name: Karhonite Junction
+description: Cross conveyors ez bro
+
+health: 20
+hasItens: true
+capacity: 8
+
+speed: 0.2
+
+group: transportation
+
+requirements: [
+    "karhonite/1"
+]
+
+research: {
+    parent: "0-karhonite-conveyor"
+    requirements: [
+        karhonite/40
+    ]
+}
