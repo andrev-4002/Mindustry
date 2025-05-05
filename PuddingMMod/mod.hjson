@@ -1,0 +1,9 @@
+name: pm
+displayName: "[yellow]Mod do Pudim"
+author: Pudim_Bacana
+description: Um mod de teste
+ver: 1.0
+version: 1.0
+minGameVersion: 136
+dependencies: []
+hidden: false
