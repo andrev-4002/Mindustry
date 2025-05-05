@@ -1,0 +1,84 @@
+type: flying
+name: et
+displayName: "[green]ET"
+description: "a little UFO that shoots pew pew"
+flying: true
+
+engineSize: 0
+
+health: 90
+armor: 0
+
+speed: 3
+maxSpeed: 0.8
+rotateSpeed: 7
+drag: 0.1
+
+range: 180
+
+hitSize: 14
+
+outlineColor: 212121
+
+weapons: [
+  {
+    name: 10-et-weapon
+    rotate: true
+    mirror: true
+    x: 5
+    y: 5
+    reload: 5
+    inaccuracy: 20
+    shootCone: 25
+    bullet: {
+      type: BasicBulletType
+      damage: 8
+      lifetime: 30
+      speed: 3
+    }
+  }
+  {
+    x: 0
+    y: 0
+    shootY: 0
+    shootX: 0
+    mirror: false
+    rotate: false
+    alwaysShooting: true
+    shootSound: none
+    recoil: 0
+    ignoreRotation: true
+    shootCone: 360
+    reload: 20
+    bullet: {
+      status: none
+      statusDuration: 20
+      instantDisappear: true
+      damage: 0
+      splashDamage: 7
+      pierceBuilding: true
+      shootEffect: {
+        followParent: true
+        rotWithParent: false
+        particles: 1
+        lifetime: 29
+        length: 0
+        region: pm-10-et-rotor
+        sizeFrom: 13
+        sizeTo: 13
+        spin: 8
+        layer: 94.98
+      }
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      splashDamageRadius: 32
+      knockback: 0.2
+      speed: 0
+    }
+  }
+]
+
+research: {
+  parent: "ufo-builder"
+}

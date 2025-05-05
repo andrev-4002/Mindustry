@@ -1,0 +1,19 @@
+type: liquid
+gas: true
+name: Carbon
+
+color: 2a2827
+colorFrom: 171616
+
+coolant: false
+heaCapacity: 0
+
+vaporEffect: {
+    colorFrom: 0e0e0e80
+    colorTo: 1c1c1c10
+    lifetime: 70
+    sizeFrom: 4
+    sizeTo: 0
+
+    layer: 79
+}

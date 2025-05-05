@@ -1,0 +1,133 @@
+type: mech
+name: Disorder
+displayName: "[red]Disorder"
+description: "caution with the lazers"
+
+health: 1790
+armor: 18
+hitSize: 27
+
+flying: false
+
+outlineColor: 212121
+heatColor: ff0000
+
+speed: 0.3
+rotateSpeed: 4
+
+stepShake: 0.2
+
+weapons: [
+    {
+      name: 04-disorder-weapon
+      x: 20
+      y: 1.8
+      shootY: 8
+      shootX: 0.4
+      top: false
+      rotate: false
+      rotationLimit: 0
+      mirror: true
+      reload: 25
+      recoil: 5
+      shots: 1
+      shootSound: "laser"
+      outlineColor: 212121
+      bullet: {
+        type: LaserBulletType
+        damage: 38
+        recoil: 0.1
+        knockback: 0
+        length: 130
+        width: 20
+        layer: 79
+        colors: [000000, ff0000, ffffff]
+        }
+    }
+    {
+      x: 0
+      y: 0
+      mirror: falsetop: false
+
+      firstShotDelay: 780
+      reload: 780
+      chargeSound: lasercharge2
+      shootSound: Sounds.beam
+      continuous: true
+      cooldownTime: 200f
+
+      bullet: {
+        type: ContinuousLaserBulletType
+        damage: 20
+        length: 180
+        drawSize: 420
+        lifetime: 180
+        shake: 1
+        colors: [ff0000, ff7575, ffffff]
+      }
+  }
+]
+
+
+parts: [
+  {
+    x: 0
+    y: -1
+    layer: 110
+    type: ShapePart
+    radius: 2.7
+    radiusTo: 34
+    stroke: 4
+    circle: false
+    sides: 15
+    hollow: true
+    color: FF4040FF
+    rotateSpeed: 1
+  }
+  {
+    x: 0
+    y: -1
+    layer: 110
+    type: ShapePart
+    radius: 1.5
+    radiusTo: 4
+    stroke: 1.7
+    circle: true
+    hollow: true
+    color: FF4040FF
+  }
+  {
+    x: 0
+    y: -1
+    layer: 110
+    type: HaloPart
+    color: FF4040FF
+    mirror: false
+    hollow: true
+    tri: true
+    shapes: 10
+    stroke: 1
+    haloRadius: 2.7
+    haloRadiusTo: 34
+    triLength: 10
+    triLengthTo: 10
+    haloRotateSpeed: -1.2
+  }
+  {
+    x: 0
+    y: -1
+    layer: 110
+    type: HaloPart
+    color: FF4040FF
+    mirror: false
+    hollow: true
+    tri: true
+    shapes: 5
+    stroke: 2
+    haloRadius: 2
+    haloRadiusTo: 4.1
+    triLength: 6
+    triLengthTo: 6
+    haloRotateSpeed: 1.4
+  }
+]

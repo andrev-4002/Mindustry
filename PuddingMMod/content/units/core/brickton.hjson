@@ -1,0 +1,48 @@
+type: flying
+name: "brickton"
+description: "The most basic core unit. Can build and buildn't structures"
+
+flying: true
+
+health: 160
+armor: 0
+hitSize: 8
+
+outlineColor: 212121
+
+speed: 3
+rotateSpeed: 10
+drag: 0.5
+
+engineOffset: 7
+
+warmupSpeed: 0.2
+warmupMaintainTime: 45
+shootWarmupSpeed: 0.05
+minWarmup: 0.70
+
+heatColor: cf9121
+
+buildPower: 1
+buildSpeed: 2
+mineTier: 1
+mineSpeed: 2.6
+
+itemCapacity: 30
+
+weapons: [
+    {
+      name: brickton-weapon
+      bullet: {
+        type: BasicBulletType
+        damage: 10
+        lifetime: 100
+        speed: 2
+      }
+      top: false
+      reload: 18
+      shots: 1
+      recoil: 2
+      outlineColor: 212121
+    }
+  ]

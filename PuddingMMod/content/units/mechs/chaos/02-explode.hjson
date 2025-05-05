@@ -1,0 +1,118 @@
+type: legs
+name: Explode
+displayName: "[red]Explode"
+description: "no need any description"
+
+health: 350
+armor: 4
+hitSize: 14
+
+flying: false
+
+outlineColor: 212121
+heatColor: ff0000
+
+speed: 1
+rotateSpeed: 8
+
+stepShake: 0.01
+legStraightness: 0.1
+legCount: 4
+
+legLength: 10.5
+lockLegBase: true
+legContinuousMove : true
+legExtension : -2
+legBaseOffset : 6
+legMaxLength : 1.16
+legMinLength : 0.2
+legLengthScl : 0.95
+legForwardScl : 0.3
+legGroupSize : 2
+rippleScale : 0.2
+
+legMoveSpace : 1
+allowLegStep : true
+
+lockLegBase: true
+legContinuousMove: true
+
+weapons: [
+    {
+        shootOnDeath: true
+        reload: 10
+        shootCone: 180
+        shootSound: explosion
+        mirror: false
+        bullet: {
+            type: BasicBulletType
+            collides: false
+            collidesTiles: false
+            hitSound: explosion
+
+            rangeOverride: 30
+            hitEffect: pulverize
+            speed: 0
+            splashDamageRadius: 80
+            instantDisappear: true
+            splashDamage: 115
+            killShooter: true
+            hittable: false
+            collidesAir: true
+            
+            fragBullets: 4
+            fragBullet: {
+                type: LiquidBulletType
+                liquid: "caramelLiq"
+                lifetime: 10
+                speed: 1.4
+            }
+        }
+    }
+]
+
+parts: [
+  {
+    x: 0
+    y: 0
+    layer: 110
+    type: ShapePart
+    radius: 0.8
+    radiusTo: 10.5
+    stroke: 1
+    circle: false
+    sides: 6
+    hollow: true
+    color: FF4040FF
+    rotateSpeed: 2
+  }
+  {
+    x: 0
+    y: 0
+    layer: 110
+    type: ShapePart
+    radius: 0.2
+    radiusTo: 0.8
+    stroke: 1
+    circle: true
+    hollow: true
+    color: FF4040FF
+  }
+  {
+    x: 0
+    y: 0
+    layer: 110
+    type: HaloPart
+    color: FF4040FF
+    mirror: false
+    hollow: true
+    tri: true
+    shapes: 8
+    stroke: 2
+    haloRadius: 6
+    haloRadiusTo: 2
+    triLength: 6
+    triLengthTo: 6
+    haloRotateSpeed: 1.2
+  }
+]

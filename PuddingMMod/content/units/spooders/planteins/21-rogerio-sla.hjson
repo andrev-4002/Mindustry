@@ -1,0 +1,41 @@
+type: legs
+name: rogerio-sla
+displayName: "[pink]Rogério sla"
+description: "The spooder v2"
+
+health: 270
+armor: 4
+hitSize: 15
+
+flying: false
+hovering: false
+drawEngine: false
+
+outlineColor: 212121
+heatColor: ff2ecb
+
+speed: 0.62
+rotateSpeed: 4
+drag: 0.1
+
+stepShake: 0.1
+legStraightness: 0.5
+legCount: 8
+
+legLength: 10
+lockLegBase: true
+legContinuousMove : true
+legExtension : -2
+legBaseOffset : 10
+legMaxLength : 1.1
+legMinLength : 0.2
+legLengthScl : 0.95
+legForwardScl : 0.3
+legGroupSize : 2
+rippleScale : 0.2
+
+legMoveSpace : 1
+allowLegStep : true
+
+lockLegBase: true
+legContinuousMove: true

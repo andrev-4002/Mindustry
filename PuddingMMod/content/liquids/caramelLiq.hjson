@@ -1,0 +1,29 @@
+name: Caramel
+color: ff7700
+barColor: ffa300
+effect: "melting"
+
+explosiveness: 0
+flammability: 0.1
+heatCapacity: 0.5
+viscosity: 0.85
+temperature: 1
+
+coolant: false
+
+lightColor: ff8800
+
+particleEffect: {
+    particles: 1
+    length: 0
+    lifetime: 60
+    sizeFrom: 1
+    sizeTo: 0
+    colorFrom: ff9a00
+    colorTo: ffbe00
+}
+
+research: {
+    parent: "pudinium-ore"
+	alwaysUnlocked: false
+}

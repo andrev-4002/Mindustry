@@ -1,0 +1,96 @@
+type: mech
+name: Disarrange
+displayName: "[red]Disarrange"
+description: "This mech can do some mess, stay care with its explosive missiles"
+
+health: 830
+armor: 10
+hitSize: 15
+
+flying: false
+
+outlineColor: 212121
+heatColor: ff0000
+
+speed: 0.4
+rotateSpeed: 5
+
+weapons: [
+    {
+        name: 03-disarrange-weapon
+        x: 13
+        y: 0.5
+        shootY: 6
+        shootX: 0.4
+        top: false
+        rotate: false
+        rotationLimit: 0
+        mirror: true
+        reload: 26
+        recoil: 2.5
+        shots: 1
+        shootSound: "flame"
+        outlineColor: 212121
+        bullet: {
+            type: MissileBulletType
+            damage: 22
+            recoil: 0.1
+            knockback: 1
+            lifetime: 44
+            speed: 5
+
+            frontColor: ff3729
+            backColor: b73013
+
+            homingPower: 0.1
+            homingRange: 60
+
+            weaveMag: 4
+            weaveScale: 4
+
+            width: 11
+            height: 14
+
+            splashDamageRadius: 30
+            splashDamage: 15
+
+            fragBullets: 1
+            fragBullet: {
+                type: LiquidBulletType
+                liquid: "caramelLiq"
+                lifetime: 2
+                speed: 1.2
+            }
+        }
+    }
+]
+
+
+parts: [
+  {
+    x: 0
+    y: 0
+    layer: 110
+    type: ShapePart
+    radius: 1.5
+    radiusTo: 25
+    stroke: 2.2
+    circle: false
+    sides: 10
+    hollow: true
+    color: FF4040FF
+    rotateSpeed: 1
+  }
+  {
+    x: 0
+    y: 0
+    layer: 110
+    type: ShapePart
+    radius: 1
+    radiusTo: 2.5
+    stroke: 1.2
+    circle: true
+    hollow: true
+    color: FF4040FF
+  }
+]

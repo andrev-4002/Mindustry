@@ -1,0 +1,10 @@
+sector: 0
+planet: "Pudinish"
+localizedName: "Start"
+difficulty: 2
+description: "The inicial sector of this planet. Let the chaos begin."
+allowLaunchLoadout: true
+allowLaunchSchematics: true
+research: cristaloyd
+captureWave: 10
+alwaysUnlocked: true

@@ -1,0 +1,27 @@
+type: Item
+name : Karhonite
+description: a base material for makin other stuff idk :/
+
+color: 61615b
+
+explosiveness : 0.0 
+flammability : 0.0 
+radioactivity : 0.0 
+charge : 0.0 
+
+hardness : 1
+cost : 1.0 
+healthScaling : 0.0 
+lowPriority : false
+
+frames : 0 
+transitionFrames : 0 
+frameTime : 5.0 
+
+buildable : true 
+
+hidden : false 
+
+research: {
+    parent: "cristaloyd"
+}

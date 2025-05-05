@@ -1,0 +1,108 @@
+type: legs
+name: renato-antonio
+displayName: "[pink]Renato Antonio"
+description: "The spooder one"
+
+health: 160
+armor: 1
+hitSize: 8
+
+flying: false
+
+outlineColor: 212121
+heatColor: ff2ecb
+
+speed: 0.72
+rotateSpeed: 4
+drag: 0.1
+
+stepShake: 0.01
+legStraightness: 0.1
+legCount: 6
+
+legLength: 8
+lockLegBase: true
+legContinuousMove : true
+legExtension : -2
+legBaseOffset : 4.4
+legMaxLength : 1.1
+legMinLength : 0.2
+legLengthScl : 0.95
+legForwardScl : 0.3
+legGroupSize : 3
+rippleScale : 0.2
+
+legMoveSpace : 1
+allowLegStep : true
+
+lockLegBase: true
+legContinuousMove: true
+
+parts: [
+    {
+        type: FlarePart
+        x: 0
+        y: -1
+        mirror: false
+        color1: 3bff52
+        color2: 7aff89
+        spinSpeed: 0.8
+        radius: 3
+        stroke: 3
+        innerScl: 2
+        sides: 3
+        followRotation: false
+    }
+]
+
+weapons: [
+    {
+        name: rn-weapon
+        x: 0
+        y: 3
+        mirror: false
+        reload: 80
+        outlineColor: 212121
+        shootEffect: none
+        ejectEffect: casing1
+        bullet: {
+            type: ArtilleryBulletType
+            knockback: 4
+            lifetime: 70
+            speed: 3
+            width: 10
+            height: 15
+            recoil: 0.8
+
+            splashDamageRadius: 16
+            splashDamage: 18
+
+            trailColor: 3bff52
+            trailWidth: 2
+            trailLength: 25
+            trailEffect: none
+            trailInterp: slope
+            shrinkX: 0.6
+            shrinkY: 0.2  
+
+            backColor: 3bff52
+            frontColor: 70ff80
+
+            smokeEffect: {
+                line: true
+                shootSound: bolt
+                cone: 60
+                particles: 5
+                lenFrom: 6
+                lenTo: 0
+                lifetime: 50
+                sizeFrom: 14
+                sizeTo: 0
+                colorFrom: c71f9d
+                colorTo: c71f9d
+                rotWithParent: true
+                baseRotation: 0
+            }
+        }
+    }
+]
